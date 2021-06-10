@@ -1,0 +1,88 @@
+{
+  "listeners": [
+    {
+      "className": "LivingAttackEvent",
+      "isServerEvent": true,
+      "staticAccessors": [
+        {
+          "name": "Vector3d:init",
+          "function": "<>",
+          "paramInjectors": [
+            {
+              "isPrimitive": true,
+              "classType": "double",
+              "argToPull": "0"
+            },
+            {
+              "isPrimitive": true,
+              "classType": "double",
+              "argToPull": "1.5"
+            },
+            {
+              "isPrimitive": true,
+              "classType": "double",
+              "argToPull": "0"
+            }
+          ],
+          "classForStaticAccess": "net.minecraft.util.math.vector.Vector3d",
+          "argName": "velocity"
+        }
+      ],
+      "accessors": [
+        {
+          "name": "ForgeEvent:getEntityLiving",
+          "function": "getEntityLiving()",
+          "instanceCheck": "net.minecraft.entity.passive.PigEntity",
+          "nextAccessors": [
+            {
+              "name": "Entity:world",
+              "function": "field_145850_b",
+              "nextAccessors": [
+                {
+                  "name": "World:isRemote",
+                  "function": "field_72995_K",
+                  "postAccessorEvent": {
+                    "conditions": [
+                      {
+                        "variableName": "isRemote",
+                        "variableResult": "true",
+                        "type": "variableCheck"
+                      }
+                    ],
+                    "outcomes": [
+                      {
+                        "condition": {
+                          "variableName": "stopEventProcessing",
+                          "variableInput": "",
+                          "type": "variableInsert"
+                        },
+                        "outcome": {
+                          "type": "null"
+                        },
+                        "type": "conditional"
+                      }
+                    ]
+                  },
+                  "argName": "isRemote"
+                }
+              ]
+            },
+            {
+              "name": "Entity:setMotion",
+              "function": "func_213317_d()",
+              "paramInjectors": [
+                {
+                  "classType": "net.minecraft.util.math.vector.Vector3d",
+                  "argToPull": "velocity"
+                }
+              ]
+            }
+          ],
+          "argName": "pigEntity"
+        }
+      ],
+      "argBasedAccessors": {},
+      "cancel": "true"
+    }
+  ]
+}

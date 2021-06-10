@@ -1,0 +1,178 @@
+# If you add a page, you must add it to the index here
+nav:
+  - Home: 'index.md'
+  - Getting Started:
+    - First Launch and Setup: 'gettingstarted/index.md'
+    - 'Sockets&#58; Which One To Pick': 'gettingstarted/socketdifferences.md'
+    - Finding Your Socket Key:
+      - Streamlabs: 'gettingstarted/socketkey/streamlabs.md'
+      - StreamElements: 'gettingstarted/socketkey/streamelements.md'
+      - DonationAlerts: 'gettingstarted/socketkey/donationalerts.md'
+      - Twitch PubSub: 'gettingstarted/socketkey/twitchpubsub.md'
+      - Twitch Chat: 'gettingstarted/socketkey/twitchchat.md'
+      - YouTube Chat: 'gettingstarted/socketkey/youtubechat.md'
+    - The CCI Editor: 'gettingstarted/editor.md'
+    - Dissecting an Event: 'gettingstarted/events.md'
+    - The Anatomy of an Event Configuration: 'gettingstarted/eventconfiguration.md'
+    - Processing an Event: 'gettingstarted/processingevent.md'
+    - The Client Mod Config File: 'gettingstarted/clientconfig.md'
+    - CCI on Servers: 'gettingstarted/ccionservers.md'
+  - Intermediate Guides:
+    - Intermediate Difficulty, the old Advanced Difficulty: 'intermediate/index.md'
+    - Getting the Most Out of Your Event Configuration: 'intermediate/configspecifics.md'
+    - Constants, the Solution to Insanity: 'intermediate/constants.md'
+    - I'm Making A Note Here, Huge Success!: 'intermediate/notes.md'
+    - Debugging the PEBKAC Issue: 'intermediate/debugging.md'
+    - Configuring a Socket Remotely with Online Configs: 'intermediate/onlineconfigs.md'
+  - Advanced Guides:
+    - Advanced Difficulty, the new Advanced Difficulty: 'advanced/index.md'
+    - 'Libraries&#58; Not The Book Kind': 'advanced/libraries.md'
+    - Debugging When Debugging Fails: 'advanced/debugmode.md'
+    - When Variable Insertion Goes Wrong: 'advanced/variableinsertion.md'
+    - 'Defaults&#58; Setting Variables on Load': 'advanced/eventinit.md'
+    - 'Strings&#58; Untying the Knot': 'advanced/strings.md'
+    - 'Arrays&#58; The Black Sheep of Variables': 'advanced/arrays.md'
+  - Expert Guides:
+    - Expert Difficulty, for Advanced Advanced Users: 'expert/index.md'
+    - 'Game Event Hooks&#58; The Config Maker&#39;s Nightmare': 'expert/gamehooks.md'
+  - How To's:
+    - How To's, a How To: 'howto/index.md'
+    - Commonly Asked How To's: 'howto/faq.md'
+    - Capturing Twitch's Channel Point Rewards: 'howto/twitchchannelpointreward.md' #No colons in the Title!
+    - Converting a Twitch Name to Minecraft Name: 'howto/twitchtomcname.md' #No colons in the Title!
+  - Libraries:
+    - Still Not The Book Kind: 'libraries/index.md' #No colons in the Title!
+  - Components:
+    - Event Configuration:
+      - Event Configuration: 'components/config/EventConfiguration.md'
+      - Configuration: 'components/config/Configuration.md'
+      - Event: 'components/config/Event.md'
+      - Condition: 
+        - Condition: 'components/config/condition/Condition.md'
+        - Array: 
+          - ArrayAppendCondition: 'components/config/condition/array/ArrayAppendCondition.md' 
+          - ArrayCombineCondition: 'components/config/condition/array/ArrayCombineCondition.md' 
+          - ArrayCondition: 'components/config/condition/array/ArrayCondition.md' 
+          - ArrayDeleteCondition: 'components/config/condition/array/ArrayDeleteCondition.md' 
+          - ArrayExplodeCondition: 'components/config/condition/array/ArrayExplodeCondition.md' 
+          - ArrayLengthCondition: 'components/config/condition/array/ArrayLengthCondition.md' 
+        - String: 
+          - Unconditional: 
+            - Base64DecodeCondition: 'components/config/condition/string/unconditional/Base64DecodeCondition.md' 
+            - Base64EncodeCondition: 'components/config/condition/string/unconditional/Base64EncodeCondition.md' 
+            - StringCompareToCondition: 'components/config/condition/string/unconditional/StringCompareToCondition.md' 
+            - StringConcatCondition: 'components/config/condition/string/unconditional/StringConcatCondition.md' 
+            - StringIndexOfCondition: 'components/config/condition/string/unconditional/StringIndexOfCondition.md' 
+            - StringLengthCondition: 'components/config/condition/string/unconditional/StringLengthCondition.md' 
+            - StringLowerCaseCondition: 'components/config/condition/string/unconditional/StringLowerCaseCondition.md' 
+            - StringReplaceCondition: 'components/config/condition/string/unconditional/StringReplaceCondition.md' 
+            - StringSplitCondition: 'components/config/condition/string/unconditional/StringSplitCondition.md' 
+            - StringTrimCondition: 'components/config/condition/string/unconditional/StringTrimCondition.md' 
+            - StringUpperCaseCondition: 'components/config/condition/string/unconditional/StringUpperCaseCondition.md' 
+          - StringContainsCondition: 'components/config/condition/string/StringContainsCondition.md' 
+          - StringEndsWithCondition: 'components/config/condition/string/StringEndsWithCondition.md' 
+          - StringEqualsCondition: 'components/config/condition/string/StringEqualsCondition.md' 
+          - StringStartsWithCondition: 'components/config/condition/string/StringStartsWithCondition.md' 
+          - StringSubStringCondition: 'components/config/condition/string/StringSubStringCondition.md' 
+        - Variable: 
+          - Unconditional: 
+            - VariableInsertCondition: 'components/config/condition/variable/unconditional/VariableInsertCondition.md' 
+            - VariableRemoveCondition: 'components/config/condition/variable/unconditional/VariableRemoveCondition.md' 
+          - VariableCondition: 'components/config/condition/variable/VariableCondition.md' 
+          - VariableExistsCondition: 'components/config/condition/variable/VariableExistsCondition.md' 
+          - VariableIsArrayCondition: 'components/config/condition/variable/VariableIsArrayCondition.md' 
+          - VariableIsNumberCondition: 'components/config/condition/variable/VariableIsNumberCondition.md' 
+        - Unconditional: 
+          - ArithmeticCondition: 'components/config/condition/unconditional/ArithmeticCondition.md' 
+          - LocalisedStringCondition: 'components/config/condition/unconditional/LocalisedStringCondition.md' 
+          - LogArgsCondition: 'components/config/condition/unconditional/LogArgsCondition.md' 
+          - NullCondition: 'components/config/condition/unconditional/NullCondition.md' 
+          - RandomNumberCondition: 'components/config/condition/unconditional/RandomNumberCondition.md' 
+          - RandomStringCondition: 'components/config/condition/unconditional/RandomStringCondition.md' 
+          - RepeatCondition: 'components/config/condition/unconditional/RepeatCondition.md' 
+          - RequestStatisticsCondition: 'components/config/condition/unconditional/RequestStatisticsCondition.md' 
+        - ConditionalCondition: 'components/config/condition/ConditionalCondition.md' 
+        - ConstantCondition: 'components/config/condition/ConstantCondition.md' 
+        - GameSettingsCondition: 'components/config/condition/GameSettingsCondition.md' 
+        - InventoryCondition: 'components/config/condition/InventoryCondition.md' 
+        - JsonSafeCondition: 'components/config/condition/JsonSafeCondition.md' 
+        - MessageCondition: 'components/config/condition/MessageCondition.md' 
+        - ModExistsCondition: 'components/config/condition/ModExistsCondition.md' 
+        - MultipleConditionCondition: 'components/config/condition/MultipleConditionCondition.md' 
+        - NoteCondition: 'components/config/condition/NoteCondition.md' 
+        - NotesListCondition: 'components/config/condition/NotesListCondition.md' 
+        - PlayerStateCondition: 'components/config/condition/PlayerStateCondition.md' 
+        - RandomCondition: 'components/config/condition/RandomCondition.md' 
+        - RangedAmountCondition: 'components/config/condition/RangedAmountCondition.md' 
+        - ReadFileCondition: 'components/config/condition/ReadFileCondition.md' 
+        - ServerCondition: 'components/config/condition/ServerCondition.md' 
+        - SpecificAmountCondition: 'components/config/condition/SpecificAmountCondition.md' 
+        - SpecificUserCondition: 'components/config/condition/SpecificUserCondition.md' 
+        - StatisticsCondition: 'components/config/condition/StatisticsCondition.md' 
+        - TargetCondition: 'components/config/condition/TargetCondition.md' 
+        - TargetExistsCondition: 'components/config/condition/TargetExistsCondition.md' 
+        - TwoHighSpaceCondition: 'components/config/condition/TwoHighSpaceCondition.md' 
+      - Outcome: 
+        - Outcome: 'components/config/outcome/Outcome.md'
+        - CCI: 
+          - CCIChangeProfileOutcome: 'components/config/outcome/cci/CCIChangeProfileOutcome.md' 
+          - CCIClearQueueOutcome: 'components/config/outcome/cci/CCIClearQueueOutcome.md' 
+          - CCIFromJsonOutcome: 'components/config/outcome/cci/CCIFromJsonOutcome.md' 
+          - CCISendEventToSocket: 'components/config/outcome/cci/CCISendEventToSocket.md' 
+          - CCISendToPlayerOutcome: 'components/config/outcome/cci/CCISendToPlayerOutcome.md' 
+        - ChatMessageOutcome: 'components/config/outcome/ChatMessageOutcome.md' 
+        - CommandOutcome: 'components/config/outcome/CommandOutcome.md' 
+        - ConditionalOutcome: 'components/config/outcome/ConditionalOutcome.md' 
+        - ConstantOutcome: 'components/config/outcome/ConstantOutcome.md' 
+        - EventOutcome: 'components/config/outcome/EventOutcome.md' 
+        - FakeCrashOutcome: 'components/config/outcome/FakeCrashOutcome.md' 
+        - FoodOutcome: 'components/config/outcome/FoodOutcome.md' 
+        - GameCrashOutcome: 'components/config/outcome/GameCrashOutcome.md' 
+        - GameSettingsOutcome: 'components/config/outcome/GameSettingsOutcome.md' 
+        - HealthOutcome: 'components/config/outcome/HealthOutcome.md' 
+        - IMCOutcome: 'components/config/outcome/IMCOutcome.md' 
+        - InputOutcome: 'components/config/outcome/InputOutcome.md' 
+        - InventoryOutcome: 'components/config/outcome/InventoryOutcome.md' 
+        - KeyPressOutcome: 'components/config/outcome/KeyPressOutcome.md' 
+        - MotionOutcome: 'components/config/outcome/MotionOutcome.md' 
+        - MountOutcome: 'components/config/outcome/MountOutcome.md' 
+        - MultipleOutcomeOutcome: 'components/config/outcome/MultipleOutcomeOutcome.md' 
+        - NarratorOutcome: 'components/config/outcome/NarratorOutcome.md' 
+        - NoteDeletionOutcome: 'components/config/outcome/NoteDeletionOutcome.md' 
+        - NoteOutcome: 'components/config/outcome/NoteOutcome.md' 
+        - NullOutcome: 'components/config/outcome/NullOutcome.md' 
+        - ObjectAccessorOutcome: 'components/config/outcome/ObjectAccessorOutcome.md' 
+        - PopupOutcome: 'components/config/outcome/PopupOutcome.md' 
+        - PromptOutcome: 'components/config/outcome/PromptOutcome.md' 
+        - ReadFromUrlOutcome: 'components/config/outcome/ReadFromUrlOutcome.md' 
+        - RepeatOutcome: 'components/config/outcome/RepeatOutcome.md' 
+        - SoundOutcome: 'components/config/outcome/SoundOutcome.md' 
+        - ToastOutcome: 'components/config/outcome/ToastOutcome.md' 
+        - WriteToFileOutcome: 'components/config/outcome/WriteToFileOutcome.md' 
+      - Constants: 'components/config/Constants.md'
+    - Game Event Config:
+      - Game Event Config: 'components/gamehooks/GameEventConfig.md'
+      - Listener: 'components/gamehooks/Listener.md'
+      - Object Accessor: 'components/gamehooks/ObjectAccessor.md'
+      - Param Injector: 'components/gamehooks/ParamInjector.md'
+
+
+# Do not edit in PRs below here
+site_name: Content Creator Integration Documentation
+site_url: 'https://content-creator-integration.readthedocs.io/en/latest/'
+
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+  - attr_list
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: false
+  - toc:
+      permalink: ' '
+
+theme:
+  name: readthedocs
+  custom_dir: theme
