@@ -3,7 +3,7 @@ How to&#58; Capturing Twitch's Channel Point Rewards
 
 Look at you, going at 200 miles per hour. 
 
-Capturing Twitch's Channel Point Rewards was explained in our [Getting Started guide](../gettingstarted/processingevent/). 
+Capturing Twitch's Channel Point Rewards was explained in our [Getting Started guide](../../gettingstarted/processingevent/). 
 
 If you're here for the PubSub tutorial, wondering why this is separate, it was our Getting Started tutorial, okay? Let's keep it simple there. PubSub spits a lot more information that you might not need.
 
