@@ -12,7 +12,7 @@ Checks a few states of the client player.
 | Name     | Type   | Description | Additional Info |
 | -------- | ------ | ----------- | --------------- |
 | *`type`* | String |      Internal ID for serialisation: `playerState`       |         Not seen in the Editor.        |
-| *`state`* | String |      State to check (use one): `alive`, `invisible`, `onFire`, `onGround`, `poisoned`, `sleeping`, `sneaking`, `swimming`, `usingItem`, `withering`, `exists`       |                 |
+| *`state`* | String |      State to check (use one): `alive`, `invisible`, `onFire`, `onGround`, `poisoned`, `sleeping`, `sneaking`, `swimming`, `isinwater`, `isinwaterorrain`, `isinwaterorbubble`, `isinwaterrainorbubble`, `usingItem`, `withering`, `exists`       |                 |
 
 ///Footnotes Go Here///
 
