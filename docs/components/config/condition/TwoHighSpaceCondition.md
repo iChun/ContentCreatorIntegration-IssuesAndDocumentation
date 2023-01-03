@@ -18,6 +18,9 @@ Finds for a two block high air space around a target (customisable). Works simil
 | *`tries`* | String |      How many tries (horizontally) we try and check. Try not to put this too excessively high.       |                 |
 | *`variableName`* | String |      Variable name to put the result into.       |                 |
 | `customHeight` | String |      Custom Height. If left out, defaults to `2`. Make sure two of `vertRadius` is higher than this number.       |                 |
+| `customWidth` | String | Custom Width. If left out, defaults to 1. | |
+| `minHoriDistance` | String | Minimum Horizontal Radius. Set this value to reject positions that are too close to the target. | |
+| `requireSolidBlock` | Boolean | Require a non-air block below the midpoint of the free space? | |
 
 ///Footnotes Go Here///
 
