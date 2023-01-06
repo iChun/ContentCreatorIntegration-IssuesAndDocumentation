@@ -3,7 +3,7 @@ Content Creator Integration - Documentation
 
 Welcome to the official documentation for [Content Creator Integration](https://www.curseforge.com/minecraft/mc-mods/content-creator-integration/).
 
-This documentation was written based off of version 1.10.0. These docs are aimed to be a reference or a guide for people trying to understand how Content Creator Integration works.
+This documentation was written based off of version 1.10.0, but may be applicable to other versions of CCI. These docs are aimed to be a reference or a guide for people trying to understand how Content Creator Integration works.
 
 Contribute to the docs at [GitHub](https://github.com/iChun/ContentCreatorIntegration-IssuesAndDocumentation).
 
